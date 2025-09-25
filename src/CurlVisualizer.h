@@ -11,7 +11,7 @@ public:
 	CurlVisualizer(void);
 	~CurlVisualizer(void);
 public:
-	HashTable			*_hashTable; // ´ÙÀ½ÁÖ¿¡ ¼³¸í
+	HashTable			*_hashTable; // Â´Ã™Ã€Â½ÃÃ–Â¿Â¡ Â¼Â³Â¸Ã­
 	HairDataGenerator	_hair;
 public:
 	vec3	scalarToColor(double val);
