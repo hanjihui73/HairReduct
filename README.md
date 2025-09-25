@@ -66,5 +66,6 @@ StrandAnalyzer.exe data\sample_strands.txt
   [Google Drive Link](https://drive.google.com/drive/folders/1Hmtub4w612y4uSeobGEtwiMfrqKNfr3a?usp=drive_link)
 
 ## Video Example
-[![Demo Video](https://youtu.be/LARh_Wxccl0)
+[![Demo Video](https://img.youtube.com/vi/LARh_Wxccl0/0.jpg)](https://youtu.be/LARh_Wxccl0)
+
 
