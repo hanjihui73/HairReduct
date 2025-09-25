@@ -58,7 +58,6 @@ HairReduct operates in the following steps:
 3. Build solution 
 
 ## 5. Run
-```powershell
 StrandAnalyzer.exe data\sample_strands.txt
 
 ## 6. Data
