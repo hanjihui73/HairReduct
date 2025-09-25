@@ -46,3 +46,22 @@ HairReduct operates in the following steps:
 
 - **Adjustable parameters**  
   Control clustering and visualization with parameters such as `kPerGroup`, `tailRatio`, `S`, and weights (`w_pos`, `w_dir`, `w_shape`), as well as merge rules.
+
+## 3. Requirements
+- Windows 10/11, Visual Studio 2022 (C++17)
+- OpenGL/GLUT (glew, glut)
+- OpenCV (core, highgui, imgproc)
+
+## 4. Build
+1. Open `StrandAnalyzer.sln` in Visual Studio
+2. Set Configuration = Release, Platform = x64
+3. Build solution 
+
+## 5. Run
+```powershell
+StrandAnalyzer.exe data\sample_strands.txt
+
+## 6. Data
+- Sample data is **not included** in this repository due to file size limits.  
+- Please download it from Google Drive and place it into the `data/` folder:  
+  [Google Drive Link](https://drive.google.com/drive/folders/1Hmtub4w612y4uSeobGEtwiMfrqKNfr3a?usp=drive_link)
