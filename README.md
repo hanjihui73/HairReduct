@@ -54,7 +54,7 @@ HairReduct operates in the following steps:
 
 ## 4. Build
 1. Open `StrandAnalyzer.sln` in Visual Studio
-2. Set Configuration = Release, Platform = x64
+2. Set Configuration = Release, Platform = x86
 3. Build solution 
 
 ## 5. Run
