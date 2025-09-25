@@ -82,15 +82,13 @@ void HairDataGenerator::open(const char *filename)
 	buildSegmentsByLength(1.2f, 5); //세그먼트를 더 잘게(길이를 줄여서 더 많이 비교하게 되는거)
 	profileSegmentsWithClassify4();
 
-	detectAndCommitSplits(0.45f, 1.0f);	//작은 변화도 새로운 그룹으로 인정
-	smoothSegments(1.0f);
+	detectAndCommitSplits(0.65f, 2.0f);	//작은 변화도 새로운 그룹으로 인정
+	smoothSegments(2.5f);
 
 	decideDestinationAndTurn(0.40f, 0.55f,   // 5단계: 목적지/회전/꼬리좌우 확정
 		1.5f, 45.0f);
 	buildFinalGroupKeyPerStrand();
 
-	//collapseRareSubgroups(50);          // 후처리: 자잘 그룹 상위로 흡수
-	// 이 for문을 주석 처리하거나 it=0으로 유지
 	for (int it = 0; it < 1; ++it) {
 		mergeSmallGroupsByRepSimilarity(/*minLargeCount=*/100, /*tailRatio=*/0.40f, /*S=*/5,
 			/*w_pos=*/0.2f, /*w_dir=*/0.3f, /*w_shape=*/0.5f,
@@ -101,7 +99,7 @@ void HairDataGenerator::open(const char *filename)
 	logFinalGroupColorSummary(_finalGroupId, _colors);
 	//buildGroupsAndColors();           // 라벨/색 버퍼 생성
 	auto repsK = computeRepresentativesMulti(
-		/*kPerGroup=*/7,
+		/*kPerGroup=*/1,
 		/*minCount=*/10,
 		/*tailRatio=*/0.40f,
 		/*S=*/5,
