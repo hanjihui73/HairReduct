@@ -127,10 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CurlVisualizer.cpp" />
-    <ClCompile Include="HairDataGenerator.cpp" />
-    <ClCompile Include="HashTable.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\CurlVisualizer.cpp" />
+    <ClCompile Include="src\HairDataGenerator.cpp" />
+    <ClCompile Include="src\HashTable.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />
@@ -142,4 +142,5 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
+
 </Project>
