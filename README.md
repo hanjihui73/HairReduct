@@ -31,3 +31,18 @@ HairReduct operates in the following steps:
 6. **Visualization (Full / Rep Only)**  
    - Render either all hair strands or only the representative lines.
 
+## 2. Key Features
+- **Preprocessing of raw hair strand data**  
+  Normalize positions and segment strands for consistent analysis.
+
+- **Strand grouping into clusters**  
+  Classify strands into Front/Back/Left/Right groups with additional sub-grouping.
+
+- **Representative strand extraction**  
+  Select medoid strands from each group based on position, direction, and shape similarity.
+
+- **Visualization modes**  
+  Switch between Full mode (all strands) and Representative-only mode.
+
+- **Adjustable parameters**  
+  Control clustering and visualization with parameters such as `kPerGroup`, `tailRatio`, `S`, and weights (`w_pos`, `w_dir`, `w_shape`), as well as merge rules.
